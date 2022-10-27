@@ -1,3 +1,4 @@
+# function for sieve of eratosthenes
 def my_sieve(maximum):
     primes = []
     numbers = list(range(2, maximum))
