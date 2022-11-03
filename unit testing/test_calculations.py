@@ -28,6 +28,9 @@ class TestCalculations(unittest.TestCase):
         self.assertEqual(calculations.divide(-1, 1), -1)
         self.assertEqual(calculations.divide(-1, -1), 1)
 
+        # self.assertRaises(ValueError, calculations.divide, 10, 0)
+        # doing the same functionality like above but without passing last two args separately
+        # using the context manager:
         with self.assertRaises(ValueError):
             calculations.divide(10, 0)
 
