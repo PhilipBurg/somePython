@@ -11,7 +11,7 @@ class Worker:
         return '{} {}'.format(self.first, self.last)
 
     @property
-    def email_adress(self):
+    def email_address(self):
         return '{}.{}@email.de'.format(self.first, self.last)
 
     def apply_raise(self):
