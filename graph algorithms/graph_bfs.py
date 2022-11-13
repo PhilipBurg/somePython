@@ -1,7 +1,7 @@
 # 1. creating some graph structure
 # task, find path from Frankfurt to München
 
-graph = {
+graph1 = {
     'Frankfurt': ["Mannheim", "Würzburg", "Kassel"],
     'Mannheim': ["Karlsruhe"],
     'Würzburg': ["Nürnberg", "Erfurt"],
@@ -42,4 +42,4 @@ def breadth_first_search(graph, start='Frankfurt', end='München'):
         print('')
 
 
-print(breadth_first_search(graph))
+print(breadth_first_search(graph1))
