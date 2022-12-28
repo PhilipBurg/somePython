@@ -4,16 +4,16 @@
 elements = [20, 12, 15, 9, 4, 1, 18, 8, 13]
 
 
-def bubbleSort(array):
+def bubble_sort(array):
     for i in range(len(array)):
         for j in range(0, len(array) - i - 1):
-            if array[j] > array[j+1]:
+            if array[j] > array[j + 1]:
                 # instead of using "temp"
-                array[j], array[j+1] = array[j+1], array[j]
+                array[j], array[j + 1] = array[j + 1], array[j]
     return array
 
+
 print(elements)
-bubbleSort(elements)
+bubble_sort(elements)
 print("After using bubble sort:")
 print(elements)
-
